@@ -1,0 +1,28 @@
+.pr1{
+    padding-top: 10%;
+    border: 1px ridge lightblue;
+    width: 40%;
+    height: 60%;
+    margin-top: 5%;
+    margin-left: 5%;
+    display: grid;
+    place-items: center;
+}
+
+#pro1 {
+    font-size: 30px;
+    color: rgb(210, 99, 99);
+    padding: 10PX;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  #pro2 {
+    font-size: 40px;
+    
+    color: rgb(49, 15, 170);
+    padding-left: 40px;
+    margin: 10px;
+    font-weight: bold;
+  }

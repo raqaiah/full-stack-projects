@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Images</title>
+    <style >
+
+.images{
+    display: grid;
+    width: 600px;
+    height: 600px;
+    margin-left: 50%;
+   
+   /*border: solid blue 2px;*/
+    animation: rotate 2s infinite ;
+    transition: width 5s ;
+}
+.grid22
+{ 
+    display: grid;
+    padding-top:20px;
+    grid-template-columns: 300px 300px 300px;
+    margin-left:30%;
+    justify-content: space-between;
+    
+}
+
+@keyframes rotate
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    30%{
+        transform: rotate(100deg);
+    }
+    60%{ 
+        transform: rotate(250deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.images:hover 
+{
+   animation: 2s;
+}
+
+
+    </style>
+</head>
+<body>
+    <section class="images">
+        <div class="grid1" id="grid1">
+            <img id="bigImg" src="flo1.jpg">
+        </div>
+    </section>
+    <section class="grid22">
+         <div class="grid2" id="grid2">
+               <img onclick="changeImg('flo2.jpg')" src="flo2.jpg">
+          </div>
+        <div class="grid3" id="grid3" >
+          <img width="600"  src="flo3.jpg" onclick="changeImg('flo3.jpg')">
+          </div>
+       <div class="grid4" id="grid4">
+          <img src="flo4.jpg" onclick="changeImg('flo4.jpg')">
+          </div>
+    </section>
+
+
+</body>
+<script>
+
+function changeImg(image){
+    let bigImg = document.getElementById('bigImg');
+    bigImg.setAttribute('src',image)
+}
+
+
+    
+
+// let grid2 = document.getElementById('grid2');
+
+//     var grid1= document.getElementById('grid1');
+
+//     grid2.addEventListener('click', function(){
+//         grid1.style.backgroundImage= "url('flo2.jpg')";
+//        }); 
+//***************//
+//        let grid3 = document.getElementById('grid3');
+
+//      grid1 =document.getElementById('grid1');
+
+// grid3.addEventListener('click', function(){
+//     grid1.style.backgroundImage= "url('flo3.jpg')";
+//    }); 
+//**************//
+//    let grid4 = document.getElementById('grid4');
+
+//  grid1 =document.getElementById('grid1');
+
+// grid4.addEventListener('click', function(){
+//     grid1.style.backgroundImage= "url('flo4.jpg')";
+//    }); 
+
+
+
+</script>
+</html>

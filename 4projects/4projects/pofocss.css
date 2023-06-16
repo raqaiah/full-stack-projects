@@ -1,0 +1,17 @@
+.portflo1{
+    display: flex;
+    padding-top: 20px;
+
+}
+.portflo{
+    flex-direction: column;
+    width:33%;
+    height:20% ;
+    border: 1px ridge rgb(178, 209, 240); 
+    margin: 20px; 
+}
+
+.portflo1 >div:hover{
+    box-shadow:40px 10px 40px rgba(49, 27, 144, 0.866);
+    background-color: rgb(211, 198, 223);
+}
